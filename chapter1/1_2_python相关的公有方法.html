@@ -57,7 +57,7 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../chapter2/第二章_Numpy的小知识.html" />
+    <link rel="next" href="1_3_列表_元组_字符串方法.html" />
     
     
     <link rel="prev" href="1_1_基本的数据类型.html" />
@@ -135,6 +135,71 @@
             
                     
                     1.2 Python的一些公有方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="1_3_列表_元组_字符串方法.html">
+            
+                <a href="1_3_列表_元组_字符串方法.html">
+            
+                    
+                    1.3 列表、元组和字符串方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="1_4_字典方法.html">
+            
+                <a href="1_4_字典方法.html">
+            
+                    
+                    1.4 字典方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="1_5_条件语句.html">
+            
+                <a href="1_5_条件语句.html">
+            
+                    
+                    1.5 条件语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="1_6_循环语句.html">
+            
+                <a href="1_6_循环语句.html">
+            
+                    
+                    1.6 循环语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="1_7_函数.html">
+            
+                <a href="1_7_函数.html">
+            
+                    
+                    1.7 函数
             
                 </a>
             
@@ -237,9 +302,31 @@
 <p><img src="1_2_python&#x76F8;&#x5173;&#x7684;&#x516C;&#x6709;&#x65B9;&#x6CD5;.assets/image-20201015141635522.png" alt="image-20201015141635522"></p>
 <p>&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;str1&#xFF0C;&#x4E00;&#x4E2A;&#x5217;&#x8868;list1&#xFF0C;&#x4E00;&#x4E2A;&#x5143;&#x7EC4;tuple1&#xFF0C;&#x7136;&#x540E;&#x5206;&#x522B;&#x8BBF;&#x95EE;&#x4ED6;&#x4EEC;&#x7684;&#x7B2C;1&#x3001;2&#x3001;3&#x4E2A;&#x6570;&#x636E;</p>
 <p>&#x60F3;&#x4F7F;&#x7528;&#x7D22;&#x5F15;&#x8BBF;&#x95EE;&#xFF0C;&#x6211;&#x4EEC;&#x76F4;&#x63A5;&#x7528;<strong>str1[0]</strong>&#x8FD9;&#x6837;&#x7684;&#x5F62;&#x5F0F;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#xFF0C;<strong>&#x540D;&#x5B57;+&#x4E2D;&#x62EC;&#x53F7;</strong>&#xFF08;&#x62EC;&#x53F7;&#x91CC;&#x9762;&#x662F;&#x4F4D;&#x7F6E;&#xFF0C;&#x6BD4;&#x5982;str1&#x7684;&#x4F4D;&#x7F6E;&#x7684;&#x53D6;&#x503C;&#x8303;&#x56F4;&#x5C31;&#x662F;&#x4ECE;0&#x5230;4&#xFF09;</p>
+<p><img src="1_2_python&#x76F8;&#x5173;&#x7684;&#x516C;&#x6709;&#x65B9;&#x6CD5;.assets/&#x4EE3;&#x7801;.png" alt="&#x4EE3;&#x7801;"><strong>&#x4EE3;&#x7801;</strong></p>
+<pre><code class="lang-python">str1 = <span class="hljs-string">&apos;Hello&apos;</span><span class="hljs-comment">#&#x5B57;&#x7B26;&#x4E32;</span>
+
+list1 = [<span class="hljs-string">&apos;hello&apos;</span>, <span class="hljs-string">&apos;what&apos;</span>, <span class="hljs-string">&apos;one&apos;</span>, <span class="hljs-string">&apos;test&apos;</span>]<span class="hljs-comment">#&#x5217;&#x8868;</span>
+
+tuple1 = (<span class="hljs-string">&apos;oh&apos;</span>, <span class="hljs-string">&apos;my&apos;</span>, <span class="hljs-string">&apos;god&apos;</span>)<span class="hljs-comment">#&#x5143;&#x7EC4;</span>
+
+print(<span class="hljs-string">&apos;&#x6211;&#x4EEC;&#x83B7;&#x5F97;str1&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x6570;&#x636E; &apos;</span> + str1[<span class="hljs-number">0</span>])
+print(<span class="hljs-string">&apos;&#x6211;&#x4EEC;&#x83B7;&#x5F97;list1&#x7684;&#x7B2C;&#x4E8C;&#x4E2A;&#x6570;&#x636E; &apos;</span> + list1[<span class="hljs-number">1</span>])
+print(<span class="hljs-string">&apos;&#x6211;&#x4EEC;&#x83B7;&#x5F97;tuple1&#x7684;&#x7B2C;&#x4E09;&#x4E2A;&#x6570;&#x636E; &apos;</span> + tuple1[<span class="hljs-number">2</span>])
+</code></pre>
 <p><img src="1_2_python&#x76F8;&#x5173;&#x7684;&#x516C;&#x6709;&#x65B9;&#x6CD5;.assets/image-20201015143000749.png" alt="image-20201015143000749"></p>
 <p>&#x800C;&#x5728;&#x5B57;&#x5178;&#x7C7B;&#x578B;&#x7684;&#x6570;&#x636E;&#x4E2D;&#xFF0C;&#x4F60;&#x60F3;&#x8981;&#x83B7;&#x5F97;&#x67D0;&#x4E2A;&#x6570;&#x636E;&#xFF0C;&#x76F4;&#x63A5;&#x901A;&#x8FC7;&#x5173;&#x952E;&#x8BCD;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x952E;&#x503C;&#x6765;&#x83B7;&#x5F97;&#x5C31;&#x884C;&#x4E86;&#x3002;</p>
 <p><img src="1_2_python&#x76F8;&#x5173;&#x7684;&#x516C;&#x6709;&#x65B9;&#x6CD5;.assets/image-20201015143647529.png" alt="image-20201015143647529"></p>
+<p><img src="1_2_python&#x76F8;&#x5173;&#x7684;&#x516C;&#x6709;&#x65B9;&#x6CD5;.assets/&#x4EE3;&#x7801;.png" alt="&#x4EE3;&#x7801;"><strong>&#x4EE3;&#x7801;</strong></p>
+<pre><code class="lang-python"><span class="hljs-comment"># -*- coding: utf-8 -*-</span>
+<span class="hljs-string">&quot;&quot;&quot;
+Created on Thu Oct 15 21:05:44 2020
+
+@author: han1254
+&quot;&quot;&quot;</span>
+dic1 = {<span class="hljs-string">&apos;&#x4E16;&#x754C;&#x4E0A;&#x6700;&#x7F8E;&#x4E3D;&#x7684;&#x4EBA;&apos;</span>: <span class="hljs-string">&apos;You!&apos;</span>, <span class="hljs-string">&apos;name&apos;</span>: <span class="hljs-string">&apos;Tom&apos;</span>, <span class="hljs-string">&apos;&#x6B63;&#x786E;&#x7B54;&#x6848;&apos;</span>: <span class="hljs-number">4</span>}
+
+print(<span class="hljs-string">&apos;&#x4E16;&#x754C;&#x4E0A;&#x6700;&#x7F8E;&#x4E3D;&#x7684;&#x4EBA;&#x662F;&#x8C01;&#x9E2D;&#xFF1F; &#x662F;&#xFF1A;&apos;</span>+dic1[<span class="hljs-string">&apos;&#x4E16;&#x754C;&#x4E0A;&#x6700;&#x7F8E;&#x4E3D;&#x7684;&#x4EBA;&apos;</span>])
+</code></pre>
 <h2 id="3-&#x5207;&#x7247;"><img src="1_2_python&#x76F8;&#x5173;&#x7684;&#x516C;&#x6709;&#x65B9;&#x6CD5;.assets/python.png" alt="python">3 &#x5207;&#x7247;</h2>
 <p>&#x63A8;&#x8350;&#x9605;&#x8BFB;&#xFF1A;</p>
 <p><a href="https://zhuanlan.zhihu.com/p/79541418" target="_blank">&#x77E5;&#x4E4E;&#xFF1A;[Python]&#x5207;&#x7247;&#x5B8C;&#x5168;&#x6307;&#x5357;(&#x8BED;&#x6CD5;&#x7BC7;)</a></p>
@@ -248,6 +335,7 @@
 <p><img src="1_2_python&#x76F8;&#x5173;&#x7684;&#x516C;&#x6709;&#x65B9;&#x6CD5;.assets/image-20201015153410477.png" alt="image-20201015153410477"></p>
 <p>&#x6BD4;&#x5982;&#xFF0C;&#x6211;&#x4EEC;&#x8BBE;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;<code>sliceTestStr = &apos;Hello,my friend&apos;</code>  </p>
 <p>&#x6211;&#x4EEC;&#x60F3;&#x83B7;&#x5F97;&#x5B83;&#x7684;&#x4ECE;&#x4F4D;&#x7F6E;1&#x5230;&#x4F4D;&#x7F6E;6&#x7684;&#x5207;&#x7247;&#xFF0C;&#x5373;&#x83B7;&#x5F97;&apos;ello,m&apos;&#x8FD9;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x987F;&#x65F6;&#x89C9;&#x5F97;&#xFF0C;&#x592A;&#x7B80;&#x5355;&#x4E86;&#x53ED;&#xFF0C;&#x770B;&#x770B;&#x4E66;&#xFF0C;&#x7136;&#x540E;&#x5199;</p>
+<p><img src="1_2_python&#x76F8;&#x5173;&#x7684;&#x516C;&#x6709;&#x65B9;&#x6CD5;.assets/&#x4EE3;&#x7801;.png" alt="&#x4EE3;&#x7801;"><strong>&#x4EE3;&#x7801;</strong></p>
 <pre><code class="lang-python">sliceTestStr = <span class="hljs-string">&apos;Hello,my friend&apos;</span>
 print(sliceTestStr[<span class="hljs-number">1</span>:<span class="hljs-number">6</span>])
 </code></pre>
@@ -255,8 +343,9 @@ print(sliceTestStr[<span class="hljs-number">1</span>:<span class="hljs-number">
 <p><img src="1_2_python&#x76F8;&#x5173;&#x7684;&#x516C;&#x6709;&#x65B9;&#x6CD5;.assets/image-20201015153947770.png" alt="image-20201015153947770"></p>
 <p>&#x4E0D;&#x592A;&#x5BF9;&#x52B2;&#xFF0C;&#x597D;&#x50CF;&#x5C11;&#x4E86;&#x4E00;&#x4E2A;m</p>
 <p>&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x5C31;&#x8981;&#x63D0;&#x9192;&#x8BFB;&#x8005;&#xFF0C;&#x5207;&#x7247;&#x8BB2;&#x7A76;&#x4E00;&#x4E2A;&#x201C;&#x524D;&#x95ED;&#x540E;&#x5F00;&#x201D;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x7B2C;&#x4E00;&#x4E2A;&#x4F4D;&#x7F6E;&#x662F;&#x6B63;&#x786E;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x4F4D;&#x7F6E;&#x6211;&#x4EEC;&#x662F;&#x5230;&#x4E0D;&#x4E86;&#x7684;&#xFF0C;&#x6211;&#x4EEC;&#x6700;&#x591A;&#x80FD;&#x5230;&#x8FBE;&#x4F4D;&#x7F6E;5&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x628A;&#x4EE3;&#x7801;&#x6539;&#x6210;</p>
+<p><img src="1_2_python&#x76F8;&#x5173;&#x7684;&#x516C;&#x6709;&#x65B9;&#x6CD5;.assets/&#x4EE3;&#x7801;.png" alt="&#x4EE3;&#x7801;"><strong>&#x4EE3;&#x7801;</strong></p>
 <pre><code class="lang-python">sliceTestStr = <span class="hljs-string">&apos;Hello,my friend&apos;</span>
-print(sliceTestStr[<span class="hljs-number">1</span>:<span class="hljs-number">6</span>])
+print(sliceTestStr[<span class="hljs-number">1</span>:<span class="hljs-number">7</span>])
 </code></pre>
 <p>&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x6765;&#x770B;&#x4E00;&#x4E0B;&#x7ED3;&#x679C;&#xFF1A;</p>
 <p><img src="1_2_python&#x76F8;&#x5173;&#x7684;&#x516C;&#x6709;&#x65B9;&#x6CD5;.assets/image-20201015154201831.png" alt="image-20201015154201831"></p>
@@ -264,6 +353,7 @@ print(sliceTestStr[<span class="hljs-number">1</span>:<span class="hljs-number">
 <p>&#x770B;&#x5230;&#x4E86;&#x6CA1;&#xFF0C;&#x6700;&#x540E;&#x7684;&#x7BAD;&#x5934;&#x662F;&#x4E2A;&#x865A;&#x7EBF;&#xFF0C;&#x6211;&#x4EEC;&#x6C38;&#x8FDC;&#x5230;&#x8FBE;&#x4E0D;&#x4E86;&#x3002;</p>
 <p>&#x90A3;&#x4E48;&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x8FD8;&#x6709;&#x4E00;&#x4E2A;&#x95EE;&#x9898;&#xFF1A;<strong>&#x6B65;&#x957F;&#xFF01;</strong></p>
 <p>&#x5F53;&#x4F60;&#x6253;&#x5F00;&#x4E66;&#x672C;&#xFF08;&#x300A;python&#x91D1;&#x878D;&#x6570;&#x636E;&#x5206;&#x6790;&#x4E0E;&#x6316;&#x6398;&#x5B9E;&#x6218;&#x300B;&#xFF09;&#x7684;&#x7B2C;12&#x9875;&#xFF0C;&#x5728;&#x5DE6;&#x4E0A;&#x65B9;&#x7684;&#x4EE3;&#x7801;&#x4E2D;&#x4F60;&#x4F1A;&#x53D1;&#x73B0;&#x4E00;&#x884C;</p>
+<p><img src="1_2_python&#x76F8;&#x5173;&#x7684;&#x516C;&#x6709;&#x65B9;&#x6CD5;.assets/&#x4EE3;&#x7801;.png" alt="&#x4EE3;&#x7801;"><strong>&#x4EE3;&#x7801;</strong></p>
 <pre><code class="lang-python">s24 = s2[<span class="hljs-number">1</span>:<span class="hljs-number">6</span>:<span class="hljs-number">2</span>]
 </code></pre>
 <p>&#x554A;&#x8FD9;&#x2026;&#x2026;<img src="1_2_python&#x76F8;&#x5173;&#x7684;&#x516C;&#x6709;&#x65B9;&#x6CD5;.assets/image-20201015154808710.png" alt="image-20201015154808710" style="zoom:33%;"></p>
@@ -277,16 +367,61 @@ print(sliceTestStr[<span class="hljs-number">1</span>:<span class="hljs-number">
 <p>&#x7ED3;&#x679C;&#x662F;&apos;el,&apos;&#xFF0C;&#x731C;&#x5BF9;&#x4E86;&#x6CA1;&#xFF1F;</p>
 <p>&#x8981;&#x662F;&#x4E0D;&#x4FE1;&#x5C31;&#x7528;Spyder&#x6D4B;&#x8BD5;&#x4E00;&#x4E0B;&#x5457;</p>
 <p><img src="1_2_python&#x76F8;&#x5173;&#x7684;&#x516C;&#x6709;&#x65B9;&#x6CD5;.assets/image-20201015155713075.png" alt="image-20201015155713075"></p>
-<h2 id="4-&#x5217;&#x8868;&#x3001;&#x5143;&#x7EC4;&#x3001;&#x5B57;&#x5178;&#x81EA;&#x5E26;&#x7684;&#x65B9;&#x6CD5;"><img src="1_2_python&#x76F8;&#x5173;&#x7684;&#x516C;&#x6709;&#x65B9;&#x6CD5;.assets/python.png" alt="python">4 &#x5217;&#x8868;&#x3001;&#x5143;&#x7EC4;&#x3001;&#x5B57;&#x5178;&#x81EA;&#x5E26;&#x7684;&#x65B9;&#x6CD5;</h2>
-<p>&#x5230;&#x8FD9;&#x91CC;&#x6211;&#x6EF4;&#x624B;&#x5DF2;&#x7ECF;&#x9178;&#x75BC;&#x4E86;&#xFF0C;&#x7B97;&#x4E86;&#xFF0C;&#x6253;&#x7B97;&#x5077;&#x61D2;&#x4E86;</p>
-<p><img src="1_2_python&#x76F8;&#x5173;&#x7684;&#x516C;&#x6709;&#x65B9;&#x6CD5;.assets/1556240244358485.jpg" style="margin: 0 auto; zoom: 40%"></p>
-<p>&#x89E3;&#x91CA;&#x4E00;&#x4E0B;&#x5565;&#x53EB;&#x7C7B;&#x81EA;&#x5E26;&#x7684;&#x65B9;&#x6CD5;&#x5427;&#xFF1A;</p>
-<p><img src="1_2_python&#x76F8;&#x5173;&#x7684;&#x516C;&#x6709;&#x65B9;&#x6CD5;.assets/image-20201015161029391.png" alt="image-20201015161029391"></p>
-<p>&#x5047;&#x8BBE;&#x4F60;&#x662F;&#x4E2A;&#x5FCD;&#x8005;&#xFF0C;&#x4E0D;&#x7BA1;&#x4F60;&#x53EB;&#x5F20;&#x4E09;&#x8FD8;&#x662F;&#x674E;&#x56DB;&#xFF0C;&#x53EA;&#x8981;&#x4F60;&#x662F;&#x4E2A;&#x5FCD;&#x8005;&#xFF0C;&#x4F60;&#x5E94;&#x8BE5;&#x5C31;&#x4F1A;&#x201C;&#x6254;&#x98DE;&#x9556;&#x201D;&#x3001;&#x201C;&#x5632;&#x8BBD;&#x201D;&#x3001;&#x201C;&#x571F;&#x9041;&#x201D;&#x7B49;&#x7B49;&#x6280;&#x80FD;&#xFF0C;&#x90A3;&#x4E48;&#x540C;&#x6837;&#x7684;&#x601D;&#x60F3;&#x4F60;&#x53EF;&#x4EE5;&#x653E;&#x5230;&#x4E00;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x4E0A;&#xFF0C;&#x6BD4;&#x5982;&#x5217;&#x8868;&#x3002;</p>
-<p><img src="1_2_python&#x76F8;&#x5173;&#x7684;&#x516C;&#x6709;&#x65B9;&#x6CD5;.assets/image-20201015161543781.png" alt="image-20201015161543781"></p>
-<p>&#x53EA;&#x8981;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#xFF0C;&#x662F;&#x5217;&#x8868;&#xFF0C;&#x4E0D;&#x7BA1;&#x4ED6;&#x53EB;list1&#x8FD8;&#x662F;&#x53EB;list2000&#xFF0C;&#x90FD;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;&#xFF0C;&#x56E0;&#x4E3A;&#x4ED6;&#x65E0;&#x8BBA;&#x53EB;&#x4EC0;&#x4E48;&#xFF0C;&#x4ED6;&#x90FD;&#x662F;&#x5217;&#x8868;&#xFF0C;&#x4ED6;&#x90FD;&#x81EA;&#x5E26;&#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;&#x3002;</p>
-<p>&#x5176;&#x4ED6;&#x7684;&#x65B9;&#x6CD5;&#x5927;&#x5BB6;&#x53EF;&#x4EE5;&#x81EA;&#x884C;&#x770B;&#x4E66;&#x6216;&#x8005;&#x770B;&#x7F51;&#x4E0A;&#x7684;&#x8BB2;&#x89E3;&#xFF0C;&#x90FD;&#x4E0D;&#x96BE;&#x4E86;&#x3002;&#x53EA;&#x8981;&#x7406;&#x89E3;&#x4E86;&#x5207;&#x7247;&#x548C;&#x7D22;&#x5F15;&#xFF0C;&#x516C;&#x6709;&#x65B9;&#x6CD5;&#x5C31;&#x6CA1;&#x6709;&#x96BE;&#x7684;&#x4E86;&#x3002;</p>
-<p><img src="1_2_python&#x76F8;&#x5173;&#x7684;&#x516C;&#x6709;&#x65B9;&#x6CD5;.assets/image-20201015161919410.png" style="margin: 0 auto; "></p>
+<p><img src="1_2_python&#x76F8;&#x5173;&#x7684;&#x516C;&#x6709;&#x65B9;&#x6CD5;.assets/&#x4EE3;&#x7801;.png" alt="&#x4EE3;&#x7801;"><strong>&#x4EE3;&#x7801;</strong></p>
+<pre><code class="lang-python">sliceTestStr = <span class="hljs-string">&apos;Hello, my friend&apos;</span>
+print(sliceTestStr[<span class="hljs-number">1</span>:<span class="hljs-number">7</span>:<span class="hljs-number">2</span>])
+</code></pre>
+<h2 id="4-&#x957F;&#x5EA6;-len"><img src="1_2_python&#x76F8;&#x5173;&#x7684;&#x516C;&#x6709;&#x65B9;&#x6CD5;.assets/python.png" alt="python">4 &#x957F;&#x5EA6; len()</h2>
+<p>&#x53EF;&#x4EE5;&#x4F5C;&#x7528;&#x5728;&#xFF1A;&#x5B57;&#x7B26;&#x4E32;&#x3001;&#x5217;&#x8868;&#x3001;&#x5143;&#x7EC4;&#x3001;&#x96C6;&#x5408;&#x3001;&#x5B57;&#x5178;&#x8FD9;&#x4E9B;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x4E0A;&#x3002;</p>
+<p>&#x5176;&#x4E2D;&#xFF0C;&#x5BF9;&#x4E8E;&#x5217;&#x8868;&#x3001;&#x5143;&#x7EC4;&#x3001;&#x96C6;&#x5408;&#x6765;&#x8BF4;&#xFF0C;len&#x65B9;&#x6CD5;&#x83B7;&#x5F97;&#x7684;&#x662F;&#x4ED6;&#x4EEC;&#x7684;&#x5143;&#x7D20;&#x7684;&#x4E2A;&#x6570;&#x3002;</p>
+<p>&#x5BF9;&#x4E8E;&#x5B57;&#x5178;&#x6765;&#x8BF4;&#xFF0C;len&#x65B9;&#x6CD5;&#x662F;&#x83B7;&#x5F97;&#x7684;&#x5176;&#x4E2D;&#x952E;&#x503C;&#x5BF9;&#x7684;&#x6570;&#x91CF;&#x3002;</p>
+<p><img src="1_2_python&#x76F8;&#x5173;&#x7684;&#x516C;&#x6709;&#x65B9;&#x6CD5;.assets/image-20201015211554833.png" alt="image-20201015211554833"></p>
+<p><img src="1_2_python&#x76F8;&#x5173;&#x7684;&#x516C;&#x6709;&#x65B9;&#x6CD5;.assets/&#x4EE3;&#x7801;.png" alt="&#x4EE3;&#x7801;"><strong>&#x4EE3;&#x7801;</strong></p>
+<pre><code class="lang-python">s3=<span class="hljs-string">&apos;I Like python&apos;</span><span class="hljs-comment">#&#x5B57;&#x7B26;&#x4E32;</span>
+L1=[<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>,<span class="hljs-number">6</span>]<span class="hljs-comment">#&#x5217;&#x8868;</span>
+t2=(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-string">&apos;k1&apos;</span>)<span class="hljs-comment">#&#x5143;&#x7EC4;</span>
+J2={<span class="hljs-number">1</span>,<span class="hljs-string">&apos;h&apos;</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">9</span>,<span class="hljs-number">2</span>}<span class="hljs-comment">#&#x96C6;&#x5408;</span>
+d1={<span class="hljs-number">1</span>:<span class="hljs-string">&apos;h&apos;</span>,<span class="hljs-number">2</span>:[<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-string">&apos;k&apos;</span>],<span class="hljs-number">3</span>:<span class="hljs-number">9</span>}<span class="hljs-comment">#&#x5B57;&#x5178;</span>
+k1=len(s3)<span class="hljs-comment">#s3&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x957F;&#x5EA6;&#xFF0C;&#x7A7A;&#x683C;&#x4E5F;&#x7B97;</span>
+k2=len(L1)<span class="hljs-comment">#L1&#x7684;&#x957F;&#x5EA6;</span>
+k3=len(t2)
+k4=len(J2)
+k5=len(d1)
+</code></pre>
+<h2 id="6-&#x7EDF;&#x8BA1;&#xFF08;max&#xFF0C;min&#xFF0C;sum&#xFF09;"><img src="1_2_python&#x76F8;&#x5173;&#x7684;&#x516C;&#x6709;&#x65B9;&#x6CD5;.assets/python.png" alt="python">6 &#x7EDF;&#x8BA1;&#xFF08;max()&#xFF0C;min()&#xFF0C;sum()&#xFF09;</h2>
+<p>&#x53EF;&#x4EE5;&#x4F5C;&#x7528;&#x5728;&#xFF1A;&#x5217;&#x8868;&#x3001;&#x5143;&#x7EC4;&#x3001;&#x5B57;&#x7B26;&#x4E32;&#x8FD9;&#x4E9B;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x4E0A;</p>
+<p><img src="1_2_python&#x76F8;&#x5173;&#x7684;&#x516C;&#x6709;&#x65B9;&#x6CD5;.assets/image-20201015212415943.png" alt="image-20201015212415943"></p>
+<p>&#x8FD9;&#x91CC;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;m5&#xFF0C;max(s2)&#x6C42;&#x7684;&#x662F;&#x5728;s2&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x7684;&#x8FD9;&#x4E9B;&#x5B57;&#x7B26;&#x91CC;&#x9762;&#xFF0C;&#x6700;&#x5927;&#x7684;&#x7684;&#x90A3;&#x4E2A;&#x5B57;&#x7B26;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;<code>h</code>&#x3001;<code>e</code>&#x3001;<code>l</code>&#x3001;<code>l</code>&#x3001;<code>o</code>&#x3001;<code>` &#xFF08;&#x8FD9;&#x91CC;&#x662F;&#x4E2A;&#x7A7A;&#x683C;&#xFF09;&#x3001;</code>w<code>&#x3001;</code>o<code>&#x3001;</code>r<code>&#x3001;</code>d<code>&#x3001;</code>!<code>&#x8FD9;&#x4E9B;&#x5B57;&#x7B26;&#x91CC;&#x9762;&#x6700;&#x5927;&#x7684;&#x90A3;&#x4E2A;&#xFF0C;&#x6240;&#x4EE5;&#x6700;&#x540E;&#x8FD4;&#x56DE;&#x7684;&#x662F;&#x4E2A;&#x5B57;&#x7B26;</code>w`&#x3002;&#xFF08;&#x5177;&#x4F53;&#x600E;&#x4E48;&#x6392;&#x5E8F;&#x7684;&#x8DDF;ASCII&#x7801;&#x6709;&#x5173;&#x7CFB;&#xFF0C;&#x611F;&#x5174;&#x8DA3;&#x7684;&#x540C;&#x5B66;&#x53EF;&#x4EE5;&#x4E86;&#x89E3;&#x4E00;&#x4E0B;&#xFF09;</p>
+<p><img src="1_2_python&#x76F8;&#x5173;&#x7684;&#x516C;&#x6709;&#x65B9;&#x6CD5;.assets/&#x4EE3;&#x7801;.png" alt="&#x4EE3;&#x7801;"><strong>&#x4EE3;&#x7801;</strong></p>
+<pre><code class="lang-python"><span class="hljs-comment"># 1.4.4 &#x7EDF;&#x8BA1;</span>
+L1=[<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>,<span class="hljs-number">6</span>]
+t1=(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">6</span>)  
+s2=<span class="hljs-string">&apos;&apos;&apos;hello word!&apos;&apos;&apos;</span>
+m1=max(L1)
+m2=max(t1)
+m3=min(L1)
+m4=sum(t1)
+m5=max(s2)
+</code></pre>
+<p><strong><a href="https://tool.oschina.net/commons?type=4" target="_blank">---&gt;ASCII&#x7801;&#x5BF9;&#x7167;&#x8868;</a></strong></p>
+<h2 id="7-&#x6210;&#x5458;&#x8EAB;&#x4EFD;"><img src="1_2_python&#x76F8;&#x5173;&#x7684;&#x516C;&#x6709;&#x65B9;&#x6CD5;.assets/python.png" alt="python">7 &#x6210;&#x5458;&#x8EAB;&#x4EFD;</h2>
+<pre><code class="lang-python"><span class="hljs-comment"># 1.4.5 &#x6210;&#x5458;&#x8EAB;&#x4EFD;</span>
+L1=[<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>,<span class="hljs-number">6</span>]
+t1=(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">6</span>)  
+s2=<span class="hljs-string">&apos;hello word!&apos;</span>
+J2={<span class="hljs-number">1</span>,<span class="hljs-string">&apos;h&apos;</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">9</span>,<span class="hljs-string">&apos;SE&apos;</span>}
+z1=<span class="hljs-string">&apos;I&apos;</span> <span class="hljs-keyword">in</span> s2
+z2=<span class="hljs-string">&apos;kj&apos;</span> <span class="hljs-keyword">in</span> L1
+z3=<span class="hljs-number">2</span> <span class="hljs-keyword">in</span> t1
+z4=<span class="hljs-string">&apos;SE&apos;</span> <span class="hljs-keyword">in</span> J2
+</code></pre>
+<h2 id="8-&#x53D8;&#x91CF;&#x5220;&#x9664;"><img src="1_2_python&#x76F8;&#x5173;&#x7684;&#x516C;&#x6709;&#x65B9;&#x6CD5;.assets/python.png" alt="python">8 &#x53D8;&#x91CF;&#x5220;&#x9664;</h2>
+<pre><code class="lang-python"><span class="hljs-comment"># 1.4.6 &#x53D8;&#x91CF;&#x5220;&#x9664;</span>
+a=[<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>]
+b=<span class="hljs-string">&apos;srt&apos;</span>
+c={<span class="hljs-number">1</span>:<span class="hljs-number">4</span>,<span class="hljs-number">2</span>:<span class="hljs-number">7</span>,<span class="hljs-number">3</span>:<span class="hljs-number">8</span>,<span class="hljs-number">4</span>:<span class="hljs-number">9</span>}
+<span class="hljs-keyword">del</span> a,b
+</code></pre>
 
                                 
                                 </section>
@@ -319,7 +454,7 @@ print(sliceTestStr[<span class="hljs-number">1</span>:<span class="hljs-number">
                 </a>
                 
                 
-                <a href="../chapter2/第二章_Numpy的小知识.html" class="navigation navigation-next " aria-label="Next page: 第二章 Numpy的小知识">
+                <a href="1_3_列表_元组_字符串方法.html" class="navigation navigation-next " aria-label="Next page: 1.3 列表、元组和字符串方法">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -330,7 +465,7 @@ print(sliceTestStr[<span class="hljs-number">1</span>:<span class="hljs-number">
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"1.2 Python的一些公有方法","level":"1.2.2","depth":2,"next":{"title":"第二章 Numpy的小知识","level":"2.1","depth":1,"path":"chapter2/第二章_Numpy的小知识.md","ref":"chapter2/第二章_Numpy的小知识.md","articles":[]},"previous":{"title":"1.1 基本的数据类型","level":"1.2.1","depth":2,"path":"chapter1/1_1_基本的数据类型.md","ref":"chapter1/1_1_基本的数据类型.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter1/1_2_python相关的公有方法.md","mtime":"2020-10-15T08:22:50.684Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-10-15T08:23:06.458Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"1.2 Python的一些公有方法","level":"1.2.2","depth":2,"next":{"title":"1.3 列表、元组和字符串方法","level":"1.2.3","depth":2,"path":"chapter1/1_3_列表_元组_字符串方法.md","ref":"chapter1/1_3_列表_元组_字符串方法.md","articles":[]},"previous":{"title":"1.1 基本的数据类型","level":"1.2.1","depth":2,"path":"chapter1/1_1_基本的数据类型.md","ref":"chapter1/1_1_基本的数据类型.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter1/1_2_python相关的公有方法.md","mtime":"2020-10-15T14:08:46.824Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-10-16T00:24:19.459Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

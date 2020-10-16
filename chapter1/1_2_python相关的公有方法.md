@@ -1,3 +1,5 @@
+
+
 # 1.2 Python的一些公有方法
 
 ## ![python](1_2_python相关的公有方法.assets/python.png)1 什么是方法？
@@ -50,11 +52,43 @@
 
 想使用索引访问，我们直接用**str1[0]**这样的形式就可以了，**名字+中括号**（括号里面是位置，比如str1的位置的取值范围就是从0到4）
 
+![代码](1_2_python相关的公有方法.assets/代码.png)**代码**
+
+```python
+str1 = 'Hello'#字符串
+
+list1 = ['hello', 'what', 'one', 'test']#列表
+
+tuple1 = ('oh', 'my', 'god')#元组
+
+print('我们获得str1的第一个数据 ' + str1[0])
+print('我们获得list1的第二个数据 ' + list1[1])
+print('我们获得tuple1的第三个数据 ' + tuple1[2])
+```
+
+
+
 ![image-20201015143000749](1_2_python相关的公有方法.assets/image-20201015143000749.png)
 
 而在字典类型的数据中，你想要获得某个数据，直接通过关键词，也就是键值来获得就行了。
 
 ![image-20201015143647529](1_2_python相关的公有方法.assets/image-20201015143647529.png)
+
+![代码](1_2_python相关的公有方法.assets/代码.png)**代码**
+
+```python
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Oct 15 21:05:44 2020
+
+@author: han1254
+"""
+dic1 = {'世界上最美丽的人': 'You!', 'name': 'Tom', '正确答案': 4}
+
+print('世界上最美丽的人是谁鸭？ 是：'+dic1['世界上最美丽的人'])
+```
+
+
 
 ## ![python](1_2_python相关的公有方法.assets/python.png)3 切片
 
@@ -72,6 +106,8 @@
 
 我们想获得它的从位置1到位置6的切片，即获得'ello,m'这个字符串，顿时觉得，太简单了叭，看看书，然后写
 
+![代码](1_2_python相关的公有方法.assets/代码.png)**代码**
+
 ```python
 sliceTestStr = 'Hello,my friend'
 print(sliceTestStr[1:6])
@@ -85,9 +121,11 @@ print(sliceTestStr[1:6])
 
 这里我们就要提醒读者，切片讲究一个“前闭后开”，也就是说第一个位置是正确的，但是最后一个位置我们是到不了的，我们最多能到达位置5，所以我们需要把代码改成
 
+![代码](1_2_python相关的公有方法.assets/代码.png)**代码**
+
 ```python
 sliceTestStr = 'Hello,my friend'
-print(sliceTestStr[1:6])
+print(sliceTestStr[1:7])
 ```
 
 现在我们来看一下结果：
@@ -101,6 +139,8 @@ print(sliceTestStr[1:6])
 那么现在我们还有一个问题：**步长！**
 
 当你打开书本（《python金融数据分析与挖掘实战》）的第12页，在左上方的代码中你会发现一行
+
+![代码](1_2_python相关的公有方法.assets/代码.png)**代码**
 
 ```python
 s24 = s2[1:6:2]
@@ -128,22 +168,91 @@ s24 = s2[1:6:2]
 
 ![image-20201015155713075](1_2_python相关的公有方法.assets/image-20201015155713075.png)
 
-## ![python](1_2_python相关的公有方法.assets/python.png)4 列表、元组、字典自带的方法
+![代码](1_2_python相关的公有方法.assets/代码.png)**代码**
 
-到这里我滴手已经酸疼了，算了，打算偷懒了
+```python
+sliceTestStr = 'Hello, my friend'
+print(sliceTestStr[1:7:2])
+```
 
-<img src="1_2_python相关的公有方法.assets/1556240244358485.jpg" style="margin: 0 auto; zoom: 40%">
 
-解释一下啥叫类自带的方法吧：
 
-![image-20201015161029391](1_2_python相关的公有方法.assets/image-20201015161029391.png)
+## ![python](1_2_python相关的公有方法.assets/python.png)4 长度 len()
 
-假设你是个忍者，不管你叫张三还是李四，只要你是个忍者，你应该就会“扔飞镖”、“嘲讽”、“土遁”等等技能，那么同样的思想你可以放到一数据类型上，比如列表。
+可以作用在：字符串、列表、元组、集合、字典这些数据类型上。
 
-![image-20201015161543781](1_2_python相关的公有方法.assets/image-20201015161543781.png)
+其中，对于列表、元组、集合来说，len方法获得的是他们的元素的个数。
 
-只要一个数据，是列表，不管他叫list1还是叫list2000，都可以使用这些方法，因为他无论叫什么，他都是列表，他都自带这些方法。
+对于字典来说，len方法是获得的其中键值对的数量。
 
-其他的方法大家可以自行看书或者看网上的讲解，都不难了。只要理解了切片和索引，公有方法就没有难的了。
+![image-20201015211554833](1_2_python相关的公有方法.assets/image-20201015211554833.png)
 
-<img src="1_2_python相关的公有方法.assets/image-20201015161919410.png" style="margin: 0 auto; ">
+![代码](1_2_python相关的公有方法.assets/代码.png)**代码**
+
+```python
+s3='I Like python'#字符串
+L1=[1,2,3,4,5,6]#列表
+t2=(1,2,'k1')#元组
+J2={1,'h',2,3,9,2}#集合
+d1={1:'h',2:[1,2,'k'],3:9}#字典
+k1=len(s3)#s3字符串的长度，空格也算
+k2=len(L1)#L1的长度
+k3=len(t2)
+k4=len(J2)
+k5=len(d1)
+```
+
+## ![python](1_2_python相关的公有方法.assets/python.png)6 统计（max()，min()，sum()）
+
+可以作用在：列表、元组、字符串这些数据类型上
+
+![image-20201015212415943](1_2_python相关的公有方法.assets/image-20201015212415943.png)
+
+这里要注意的是m5，max(s2)求的是在s2字符串中的这些字符里面，最大的的那个字符，也就是`h`、`e`、`l`、`l`、`o`、` ` （这里是个空格）、`w`、`o`、`r`、`d`、`!`这些字符里面最大的那个，所以最后返回的是个字符`w`。（具体怎么排序的跟ASCII码有关系，感兴趣的同学可以了解一下）
+
+![代码](1_2_python相关的公有方法.assets/代码.png)**代码**
+
+```python
+# 1.4.4 统计
+L1=[1,2,3,4,5,6]
+t1=(1,2,3,4,6)  
+s2='''hello word!'''
+m1=max(L1)
+m2=max(t1)
+m3=min(L1)
+m4=sum(t1)
+m5=max(s2)
+```
+
+**[--->ASCII码对照表](https://tool.oschina.net/commons?type=4)**
+
+
+
+## ![python](1_2_python相关的公有方法.assets/python.png)7 成员身份
+
+```python
+# 1.4.5 成员身份
+L1=[1,2,3,4,5,6]
+t1=(1,2,3,4,6)  
+s2='hello word!'
+J2={1,'h',2,3,9,'SE'}
+z1='I' in s2
+z2='kj' in L1
+z3=2 in t1
+z4='SE' in J2
+```
+
+## ![python](1_2_python相关的公有方法.assets/python.png)8 变量删除
+
+```python
+# 1.4.6 变量删除
+a=[1,2,3,4]
+b='srt'
+c={1:4,2:7,3:8,4:9}
+del a,b
+```
+
+
+
+
+
